@@ -1,5 +1,5 @@
+<body style="background-color: black">
 {% extends 'base.html'%} {% import 'macros.html' as macro%}
-
 
 <!-- Styles block -->
 
@@ -8,11 +8,11 @@
 
 <!-- Content block -->
 {% block content %}
-<div class="container">
+<div class="container" style="text-align: right; color: white; padding: 2%;">
 
     <!-- Poster background -->
-    <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterPath" style="background: url({{movie.poster}}) no-repeat center center">
+    <div style="float: left;" >
+        <img src="{{movie.poster}}" style="height: 500px;">
         </div>
 
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 movie-details">
@@ -32,7 +32,7 @@
 
     </div>
 
-    <div class="row">
+    <div style="text-align: center; color: white; padding-bottom: 10%;">
 
         <h1>Reviews</h1>
         <hr> {% if reviews %} {{macro.displayReviews(reviews)}} {% else%}
@@ -45,3 +45,4 @@
 
 </div>
 {% endblock %}
+</body>
