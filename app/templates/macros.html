@@ -24,7 +24,7 @@
 <!-- Displaying reviews macro -->
 {% macro displayReviews(review_list) %} {% for review in review_list %}
 
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 review-card">
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 review-card" style="background-color: white; color: black; border-radius: 10px; margin-left: 2%;">
     <h2> {{ review.title}} </h2>
     <p> {{ review.review | truncate(30) }}</p>
 
