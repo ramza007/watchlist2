@@ -4,3 +4,4 @@ instance/
 .vscode/
 __pycache__/
 **/.DS_Store
+start.sh
