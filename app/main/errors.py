@@ -7,4 +7,5 @@ def four_Ow_four(error):
     '''
     Function to render the 404 error page
     '''
-    return render_template('fourOwfour.html'), 404
+    title = 'Error go to home page'
+    return render_template('fourOwfour.html', title=title), 404
