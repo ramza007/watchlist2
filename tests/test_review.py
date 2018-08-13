@@ -1,4 +1,7 @@
-class Review:
+import unittest
+from app.models import Movie
+
+class Review(unitest.Testcase):
 
     all_reviews = []
 
